@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Classificação Biológica — Guia de Estudos</title>
+<style>
+:root{--bg:#f4f7fb;--card:#fff;--ink:#172033;--muted:#5c667a;--primary:#2457c5;--soft:#eaf0ff;--line:#e1e7f0;--green:#168454;--red:#c13d4b}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.65 system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif}
+header{background:linear-gradient(125deg,#142b58,#2862c7);color:white;padding:54px 20px 46px}
+.hero{max-width:1050px;margin:auto}header .tag{font-size:.78rem;letter-spacing:.13em;text-transform:uppercase;opacity:.8;font-weight:700}
+h1{font-size:clamp(2rem,5vw,3.3rem);line-height:1.12;margin:12px 0}
+header p{max-width:720px;color:#e1eaff;margin:12px 0 0;font-size:1.08rem}
+nav{position:sticky;top:0;z-index:5;background:#ffffffed;backdrop-filter:blur(10px);border-bottom:1px solid var(--line);padding:10px 16px;overflow-x:auto;white-space:nowrap}
+nav a{display:inline-block;color:#284477;text-decoration:none;font-size:.9rem;font-weight:650;padding:7px 11px;border-radius:8px}nav a:hover{background:var(--soft)}
+main{max-width:1050px;margin:30px auto;padding:0 18px 60px}
+section{scroll-margin-top:80px;margin:26px 0}
+h2{font-size:1.65rem;margin:0 0 14px;line-height:1.25}h3{margin:0 0 8px;font-size:1.12rem}
+p{margin:8px 0}.muted{color:var(--muted)}.lead{font-size:1.06rem;color:#39465d}
+.card{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:22px;margin:14px 0;box-shadow:0 5px 18px #1d37600a}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:14px}
+.small-card{background:white;border:1px solid var(--line);border-radius:14px;padding:17px}
+.pill{display:inline-block;background:var(--soft);color:#244da3;border-radius:999px;padding:4px 10px;font-size:.78rem;font-weight:700;margin-bottom:8px}
+.callout{border-left:4px solid var(--primary);background:#edf3ff;padding:14px 17px;border-radius:0 10px 10px 0;margin:16px 0}
+.warn{border-left-color:#d18b19;background:#fff7e6}
+.example{font-family:Georgia,serif;font-size:1.2rem;font-style:italic;color:#173f91}
+table{width:100%;border-collapse:collapse;margin:12px 0;font-size:.95rem}th,td{text-align:left;padding:11px 12px;border-bottom:1px solid var(--line)}th{background:#f1f5fb;color:#263b62}tr:last-child td{border-bottom:0}
+.taxonomy{display:grid;gap:8px;max-width:650px;margin:16px auto}
+.taxonomy div{padding:11px 16px;border-radius:10px;background:#edf2ff;border:1px solid #d8e2fb;display:flex;justify-content:space-between;gap:12px}
+.taxonomy div:nth-child(1){margin:0 0 0 0;background:#dce7ff}.taxonomy div:nth-child(2){margin:0 3%}.taxonomy div:nth-child(3){margin:0 6%}.taxonomy div:nth-child(4){margin:0 9%}.taxonomy div:nth-child(5){margin:0 12%}.taxonomy div:nth-child(6){margin:0 15%}.taxonomy div:nth-child(7){margin:0 18%}.taxonomy div:nth-child(8){margin:0 21%;background:#e1f5eb;border-color:#c5e9d5}
+.taxonomy b{color:#173f91}.taxonomy span{color:var(--muted);font-size:.9rem}
+.quiz-q{padding:17px 0;border-bottom:1px solid var(--line)}.quiz-q:last-child{border:0}
+.option{display:block;padding:8px 10px;border-radius:8px;cursor:pointer}.option:hover{background:#f2f5fb}.option input{margin-right:8px;accent-color:var(--primary)}
+button{border:0;border-radius:10px;background:var(--primary);color:white;padding:11px 18px;font-weight:700;font-size:.95rem;cursor:pointer}button:hover{background:#19469f}button.secondary{background:#e9eef8;color:#263b62}
+#result{margin-top:15px;font-weight:700}.correct{color:var(--green)}.wrong{color:var(--red)}
+footer{text-align:center;color:var(--muted);padding:25px;border-top:1px solid var(--line);font-size:.9rem}
+@media(max-width:600px){.card{padding:17px}th,td{padding:9px 7px;font-size:.88rem}.taxonomy div{margin-left:0!important;margin-right:0!important}}
+</style>
+</head>
+<body>
+<header><div class="hero">
+<div class="tag">Biologia • Guia de estudos</div>
+<h1>Classificação biológica</h1>
+<p>Entenda como os seres vivos recebem nomes científicos e são organizados em reinos, domínios e categorias taxonômicas.</p>
+</div></header>
+<nav>
+<a href="#nomenclatura">Nomenclatura</a><a href="#reinos">Cinco reinos</a><a href="#dominios">Três domínios</a><a href="#taxonomia">DOREFICOFAGI</a><a href="#exercicios">Exercícios</a>
+</nav>
+<main>
+<section id="nomenclatura">
+<h2>1. Nomenclatura biológica</h2>
+<div class="card">
+<p class="lead">A nomenclatura biológica é o sistema que estabelece nomes científicos universais para os seres vivos. Assim, pesquisadores de diferentes países conseguem identificar a mesma espécie sem depender dos nomes populares ou do idioma.</p>
+<h3>Nomenclatura binomial</h3>
+<p>O naturalista sueco <strong>Carlos Lineu</strong> ajudou a consolidar o sistema binomial, no qual o nome científico de uma espécie é formado por duas palavras:</p>
+<ul><li><strong>Gênero:</strong> primeira palavra, iniciada com letra maiúscula.</li><li><strong>Epíteto específico:</strong> segunda palavra, escrita com letra minúscula.</li></ul>
+<div class="callout"><div class="example">Homo sapiens</div><strong>Homo</strong> = gênero • <strong>sapiens</strong> = epíteto específico<br>O nome completo identifica a espécie humana.</div>
+<h3>Regras de escrita</h3>
+<ul><li>O nome deve ser latino ou latinizado.</li><li>Deve ter duas palavras (gênero + epíteto específico).</li><li>É escrito em itálico quando digitado; à mão, as duas palavras devem ser sublinhadas separadamente.</li><li>O gênero começa com maiúscula e o epíteto específico com minúscula.</li></ul>
+<p><strong>Outros exemplos:</strong> <i>Canis lupus</i> (lobo), <i>Felis catus</i> (gato doméstico) e <i>Zea mays</i> (milho).</p>
+</div>
+</section>
+
+<section id="reinos">
+<h2>2. Os cinco reinos</h2>
+<p class="lead">Na classificação tradicional, os seres vivos são distribuídos em cinco reinos, considerando características como tipo de célula, número de células e modo de nutrição.</p>
+<div class="grid">
+<div class="small-card"><span class="pill">1 • Monera</span><h3>Monera</h3><p>Seres unicelulares e procariontes, isto é, não possuem núcleo delimitado por membrana.</p><p><strong>Exemplos:</strong> bactérias e cianobactérias.</p></div>
+<div class="small-card"><span class="pill">2 • Protista</span><h3>Protista</h3><p>Organismos eucariontes, em geral unicelulares, embora existam algas pluricelulares simples.</p><p><strong>Exemplos:</strong> protozoários e algas.</p></div>
+<div class="small-card"><span class="pill">3 • Fungi</span><h3>Fungi</h3><p>Organismos eucariontes, uni ou pluricelulares, heterótrofos que obtêm nutrientes por absorção.</p><p><strong>Exemplos:</strong> cogumelos, bolores e leveduras.</p></div>
+<div class="small-card"><span class="pill">4 • Plantae</span><h3>Plantae</h3><p>Organismos eucariontes e pluricelulares; em sua maioria, autótrofos fotossintetizantes e com parede celular de celulose.</p><p><strong>Exemplos:</strong> musgos, samambaias e árvores.</p></div>
+<div class="small-card"><span class="pill">5 • Animalia</span><h3>Animalia</h3><p>Organismos eucariontes, pluricelulares e heterótrofos por ingestão. Não possuem parede celular.</p><p><strong>Exemplos:</strong> seres humanos, insetos, peixes e aves.</p></div>
+</div>
+<div class="callout warn"><strong>Atenção:</strong> os cinco reinos representam um modelo tradicional de classificação. Em sistemas modernos, o antigo reino Monera foi separado principalmente nos domínios Bacteria e Archaea. Portanto, não confunda os cinco reinos com os três domínios.</div>
+</section>
+
+<section id="dominios">
+<h2>3. Os três domínios</h2>
+<p class="lead">Domínio é uma categoria taxonômica mais abrangente que reino. O sistema de três domínios reconhece grandes diferenças evolutivas e celulares entre os organismos.</p>
+<div class="grid">
+<div class="small-card"><span class="pill">Procariontes</span><h3>Bacteria</h3><p>Seres procariontes. A parede celular da maioria das bactérias possui peptidoglicano.</p><p><strong>Exemplo:</strong> <i>Escherichia coli</i>.</p></div>
+<div class="small-card"><span class="pill">Procariontes</span><h3>Archaea</h3><p>Também são procariontes, mas apresentam composição de membrana e características bioquímicas diferentes das bactérias. Algumas vivem em ambientes extremos; outras vivem em ambientes comuns.</p></div>
+<div class="small-card"><span class="pill">Eucariontes</span><h3>Eukarya</h3><p>Organismos cujas células possuem núcleo delimitado por membrana e organelas membranosas.</p><p><strong>Inclui:</strong> animais, plantas, fungos e diversos protistas.</p></div>
+</div>
+<div class="callout"><strong>Diferença essencial:</strong> Bacteria e Archaea são procariontes; Eukarya reúne os eucariontes. Procariontes não possuem núcleo delimitado por membrana, enquanto eucariontes possuem.</div>
+</section>
+
+<section id="taxonomia">
+<h2>4. Categorias taxonômicas — DOREFICOFAGI</h2>
+<div class="card">
+<p>As categorias taxonômicas organizam os seres vivos em níveis. A sequência vai do grupo mais abrangente ao mais específico:</p>
+<div class="taxonomy">
+<div><b>Domínio</b><span>mais abrangente</span></div>
+<div><b>Reino</b><span></span></div>
+<div><b>Filo</b><span></span></div>
+<div><b>Classe</b><span></span></div>
+<div><b>Ordem</b><span></span></div>
+<div><b>Família</b><span></span></div>
+<div><b>Gênero</b><span></span></div>
+<div><b>Espécie</b><span>mais específica</span></div>
+</div>
+<p><strong>Ordem correta:</strong> Domínio → Reino → Filo → Classe → Ordem → Família → Gênero → Espécie.</p>
+<div class="callout warn"><strong>Sobre o macete “DOREFICOFAGI”:</strong> ele pode ser usado como recurso de memorização, mas a forma mais segura é decorar a sequência completa acima. Não confunda as letras do macete com os nomes oficiais das categorias.</div>
+<h3>Exemplo: classificação do ser humano</h3>
+<table><thead><tr><th>Categoria</th><th>Classificação humana</th></tr></thead><tbody>
+<tr><td>Domínio</td><td>Eukarya</td></tr><tr><td>Reino</td><td>Animalia</td></tr><tr><td>Filo</td><td>Chordata</td></tr><tr><td>Classe</td><td>Mammalia</td></tr><tr><td>Ordem</td><td>Primates</td></tr><tr><td>Família</td><td>Hominidae</td></tr><tr><td>Gênero</td><td><i>Homo</i></td></tr><tr><td>Espécie</td><td><i>Homo sapiens</i></td></tr>
+</tbody></table>
+<p class="muted">Quanto mais se avança em direção à espécie, mais específicas ficam as características compartilhadas pelos organismos do grupo.</p>
+</div>
+</section>
+
+<section id="exercicios">
+<h2>5. Exercícios de fixação</h2>
+<p class="lead">Responda às seis questões e clique em “Corrigir” para conferir seu resultado e as explicações.</p>
+<div class="card" id="quiz">
+<form id="quizForm">
+<div class="quiz-q"><strong>1. Quem ajudou a consolidar o sistema de nomenclatura binomial?</strong>
+<label class="option"><input type="radio" name="q1" value="0">Charles Darwin</label><label class="option"><input type="radio" name="q1" value="1">Carlos Lineu</label><label class="option"><input type="radio" name="q1" value="2">Gregor Mendel</label><label class="option"><input type="radio" name="q1" value="3">Louis Pasteur</label></div>
+<div class="quiz-q"><strong>2. Qual alternativa apresenta corretamente um nome científico?</strong>
+<label class="option"><input type="radio" name="q2" value="0">homo Sapiens</label><label class="option"><input type="radio" name="q2" value="1">Homo Sapiens</label><label class="option"><input type="radio" name="q2" value="2">Homo sapiens</label><label class="option"><input type="radio" name="q2" value="3">HOMO SAPIENS</label></div>
+<div class="quiz-q"><strong>3. Qual reino reúne organismos heterótrofos por absorção?</strong>
+<label class="option"><input type="radio" name="q3" value="0">Plantae</label><label class="option"><input type="radio" name="q3" value="1">Animalia</label><label class="option"><input type="radio" name="q3" value="2">Fungi</label><label class="option"><input type="radio" name="q3" value="3">Monera</label></div>
+<div class="quiz-q"><strong>4. Qual domínio inclui animais, plantas e fungos?</strong>
+<label class="option"><input type="radio" name="q4" value="0">Bacteria</label><label class="option"><input type="radio" name="q4" value="1">Archaea</label><label class="option"><input type="radio" name="q4" value="2">Eukarya</label><label class="option"><input type="radio" name="q4" value="3">Monera</label></div>
+<div class="quiz-q"><strong>5. Qual é a categoria taxonômica mais específica da sequência?</strong>
+<label class="option"><input type="radio" name="q5" value="0">Família</label><label class="option"><input type="radio" name="q5" value="1">Gênero</label><label class="option"><input type="radio" name="q5" value="2">Ordem</label><label class="option"><input type="radio" name="q5" value="3">Espécie</label></div>
+<div class="quiz-q"><strong>6. Qual é a sequência correta, da categoria mais abrangente à mais específica?</strong>
+<label class="option"><input type="radio" name="q6" value="0">Reino, Domínio, Filo, Classe, Ordem, Família, Gênero, Espécie</label><label class="option"><input type="radio" name="q6" value="1">Domínio, Reino, Filo, Classe, Ordem, Família, Gênero, Espécie</label><label class="option"><input type="radio" name="q6" value="2">Domínio, Filo, Reino, Ordem, Classe, Família, Gênero, Espécie</label><label class="option"><input type="radio" name="q6" value="3">Espécie, Gênero, Família, Ordem, Classe, Filo, Reino, Domínio</label></div>
+<button type="button" onclick="corrigir()">Corrigir respostas</button>
+<button type="reset" class="secondary" onclick="limparResultado()">Refazer</button>
+<div id="result" aria-live="polite"></div>
+<div id="feedback"></div>
+</form>
+</div>
+</section>
+</main>
+<footer>Material de revisão • Classificação biológica</footer>
+<script>
+const gabarito=[1,2,2,2,3,1];
+const explicacoes=[
+"Carlos Lineu ajudou a sistematizar a nomenclatura binomial.",
+"O gênero começa com letra maiúscula e o epíteto específico com letra minúscula: Homo sapiens.",
+"Os fungos são heterótrofos e obtêm nutrientes por absorção.",
+"Eukarya reúne os organismos eucariontes, incluindo animais, plantas, fungos e protistas.",
+"Espécie é a categoria mais específica da sequência taxonômica apresentada.",
+"A ordem é Domínio, Reino, Filo, Classe, Ordem, Família, Gênero e Espécie."
+];
+function corrigir(){
+ let acertos=0,html="";
+ for(let i=0;i<6;i++){
+  const marcado=document.querySelector('input[name="q'+(i+1)+'"]:checked');
+  const certo=marcado && Number(marcado.value)===gabarito[i];
+  if(certo)acertos++;
+  html+=`<p class="${certo?'correct':'wrong'}">${i+1}. ${certo?'Correto':'Incorreto'} — ${explicacoes[i]}</p>`;
+ }
+ document.getElementById('result').textContent=`Resultado: ${acertos} de 6 questões.`;
+ document.getElementById('feedback').innerHTML=html;
+}
+function limparResultado(){document.getElementById('result').textContent='';document.getElementById('feedback').innerHTML='';}
+</script>
+</body>
+</html>
